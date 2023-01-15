@@ -1,6 +1,7 @@
 
 import numpy as np
-import math as mt
+#import math as mt
+
 
 def inputTwoVal():
     global Num1,Num2
@@ -81,7 +82,16 @@ while True:
     9.Tangente
     10.Salir \n""")
 
-    opc = int(input("Elige una opción de la calculadora: \n"))
+    try:
+        opc = int(input("Elige una opción de la calculadora: \n"))
+    except:
+        print("debes escribir un valor, si no seleccionas un valor se cerrara el programa")
+        try:
+            opc = int(input("Elige una opción de la calculadora: \n"))
+        except:
+            print("Gracias por usar la Calculadora ,¡Vuelve pronto! :D")
+            quit()
+
     operation(opc)
     repetOperation(opc)
 
