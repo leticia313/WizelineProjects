@@ -94,32 +94,38 @@ def operation(opc):
         quit()
 
 
-#Menu operation
-while True:
-    print("""
-    Calculadora
-    Indique la operación a realizar
-    
-    1.Suma
-    2.Resta
-    3.Multiplicacion
-    4.División
-    5.Raiz
-    6.Exponente
-    7.Seno
-    8.Coseno
-    9.Tangente
-    10.Salir \n""")
+#Menu operation función principal
 
-    try:
-        opc = int(input("Elige una opción de la calculadora: \n"))
-    except:
-        print("debes escribir un valor, si no seleccionas un valor se cerrara el programa")
+
+def _init_():
+    menu()
+
+def menu():
+    while True:
+        print("""
+        Calculadora
+        Indique la operación a realizar
+        
+        1.Suma
+        2.Resta
+        3.Multiplicacion        
+        4.División
+        5.Raiz
+        6.Exponente
+        7.Seno
+        8.Coseno
+        9.Tangente
+        10.Salir \n""")
+
         try:
             opc = int(input("Elige una opción de la calculadora: \n"))
         except:
-            print("Gracias por usar la Calculadora ,¡Vuelve pronto! :D")
-            quit()
+            print("debes escribir un valor, si no seleccionas un valor se cerrara el programa")
+            try:
+                opc = int(input("Elige una opción de la calculadora: \n"))
+            except:
+                print("Gracias por usar la Calculadora ,¡Vuelve pronto! :D")
+                quit()
 
     operation(opc)
     repetOperation(opc)
