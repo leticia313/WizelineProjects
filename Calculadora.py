@@ -30,11 +30,17 @@ def divi(Num1,Num2):
 def raiz(NumOne):
     print(f"La raiz cuadrada de {NumOne} = {np.sqrt(NumOne)}")
 
+def exp(Num1,Num2):
+    print(f"El exponente de {Num1} elevado {Num2} = {mt.pow(Num1,Num2)}")
+
 def sen(NumOne):
         print(f"El seno de {NumOne}= {mt.sin(NumOne)}")
 
 def cos(NumOne):
         print(f"El coseno de {NumOne}= {mt.cos(NumOne)}")
+
+def tan(NumOne):
+        print(f"La tangente de {NumOne}= {mt.tan(NumOne)}")
 
 
 def repetOperation(res):
@@ -67,6 +73,10 @@ def operation(opc):
         inputOneval()
         raiz(NumOne)
 
+    elif opc == 6:
+        inputTwoVal()
+        exp(Num1,Num2)
+
     elif opc == 7:
         inputOneval()
         sen(NumOne)
@@ -74,6 +84,10 @@ def operation(opc):
     elif opc == 8:
         inputOneval()
         cos(NumOne)
+
+    elif opc == 9:
+        inputOneval()
+        tan(NumOne)
 
     elif opc == 10:
         print("Gracias por usar la Calculadora ,¡Vuelve pronto! :D")
