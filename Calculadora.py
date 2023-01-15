@@ -1,6 +1,6 @@
 
 import numpy as np
-#import math as mt
+import math as mt
 
 
 def inputTwoVal():
@@ -9,8 +9,8 @@ def inputTwoVal():
     Num2 = float(input("Introduce el 2° valor \n"))
 
 def inputOneval():
-    global NumRaiz
-    NumRaiz = float(input("Introduce un valor \n"))
+    global NumOne
+    NumOne = float(input("Introduce un valor \n"))
 
 def suma(Num1,Num2):
     print(f"La suma de {Num1} + {Num2} = {Num1 + Num2}")
@@ -27,8 +27,15 @@ def divi(Num1,Num2):
     else:
         print(f"La division de {Num1} / {Num2}= {Num1 / Num2}")
 
-def raiz(NumRaiz):
-    print(f"La raiz cuadrada de {NumRaiz}= {np.sqrt(NumRaiz)}")
+def raiz(NumOne):
+    print(f"La raiz cuadrada de {NumOne} = {np.sqrt(NumOne)}")
+
+def sen(NumOne):
+        print(f"El seno de {NumOne}= {mt.sin(NumOne)}")
+
+def cos(NumOne):
+        print(f"El coseno de {NumOne}= {mt.cos(NumOne)}")
+
 
 def repetOperation(res):
     while True:
@@ -58,7 +65,15 @@ def operation(opc):
 
     elif opc == 5:
         inputOneval()
-        raiz(NumRaiz)
+        raiz(NumOne)
+
+    elif opc == 7:
+        inputOneval()
+        sen(NumOne)
+
+    elif opc == 8:
+        inputOneval()
+        cos(NumOne)
 
     elif opc == 10:
         print("Gracias por usar la Calculadora ,¡Vuelve pronto! :D")
