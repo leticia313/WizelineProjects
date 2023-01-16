@@ -25,6 +25,7 @@ def divi(Num1,Num2):
     else:
         print(f"La division de {Num1} / {Num2}= {Num1 / Num2}")
 
+
 def raiz(NumOne):
     print(f"La raiz cuadrada de {NumOne} = {np.sqrt(NumOne)}")
 
