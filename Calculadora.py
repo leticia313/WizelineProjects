@@ -1,10 +1,8 @@
-
 import numpy as np
 import math as mt
 
-
 def inputTwoVal():
-    global Num1,Num2
+    global Num1, Num2
     Num1 = float(input("Introduce el 1° Valor \n"))
     Num2 = float(input("Introduce el 2° valor \n"))
 
@@ -12,7 +10,7 @@ def inputOneval():
     global NumOne
     NumOne = float(input("Introduce un valor \n"))
 
-def suma(Num1,Num2):
+def suma(Num1, Num2):
     print(f"La suma de {Num1} + {Num2} = {Num1 + Num2}")
 
 def resta(Num1,Num2):
@@ -41,7 +39,6 @@ def cos(NumOne):
 
 def tan(NumOne):
         print(f"La tangente de {NumOne}= {mt.tan(NumOne)}")
-
 
 def repetOperation(res):
     while True:
@@ -95,11 +92,6 @@ def operation(opc):
 
 
 #Menu operation función principal
-
-
-def _init_():
-    menu()
-
 def menu():
     while True:
         print("""
@@ -127,6 +119,8 @@ def menu():
                 print("Gracias por usar la Calculadora ,¡Vuelve pronto! :D")
                 quit()
 
-    operation(opc)
-    repetOperation(opc)
+        operation(opc)
+        repetOperation(opc)
+
+menu()
 
