@@ -10,6 +10,7 @@ def inputOneval():
     global NumOne
     NumOne = float(input("Introduce un valor \n"))
 
+
 def suma(Num1, Num2):
     print(f"La suma de {Num1} + {Num2} = {Num1 + Num2}")
 
